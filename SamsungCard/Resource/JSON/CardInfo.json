@@ -1,0 +1,35 @@
+[
+    {
+        "name": "%EA%B5%AD%EB%AF%BC%ED%96%89%EB%B3%B5%20%EC%82%BC%EC%84%B1%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C%20V2",
+        "num": "1111-2222-****-****",
+        "type": 0,
+        "imgUrl": "b_ABP1689.png",
+        "descrip": "-%20%EC%A0%95%EB%B6%80%EC%A7%80%EC%9B%90%0A-%20%EA%B5%AD%EA%B0%80%EB%B0%94%EC%9A%B0%EC%B2%98%0A-%20%EC%87%BC%ED%95%91%202%25%20%EC%BA%90%EC%8B%9C%EB%B0%B1%0A-%20%EC%9D%98%EB%A3%8C%C2%B7%EA%B5%90%EC%9C%A1%202%25%20%EC%BA%90%EC%8B%9C%EB%B0%B1%0A-%20%EC%8B%A0%EC%84%B8%EA%B3%84%EB%B0%B1%ED%99%94%EC%A0%90%20%EC%A0%9C%ED%9C%B4%20%EC%84%9C%EB%B9%84%EC%8A%A4",
+        "moreInfo": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1689"
+        
+    },
+    {
+        "name": "%EC%82%BC%EC%84%B1%EC%B9%B4%EB%93%9C%20taptap%20O",
+        "num": "2222-3333-****-****",
+        "type": 1,
+        "imgUrl": "b_AAP1483.png",
+        "descrip": "-%20%EB%9D%BC%EC%9D%B4%ED%94%84%EC%8A%A4%ED%83%80%EC%9D%BC%20%ED%8C%A8%ED%82%A4%EC%A7%80%28%EC%98%B5%EC%85%98%20%ED%8C%A8%ED%82%A4%EC%A7%80%20%EC%A4%91%20%ED%83%9D1%29%0A-%20%EC%98%B5%EC%85%98%ED%8C%A8%ED%82%A4%EC%A7%80%20%EC%83%81%EC%84%B8%EB%B3%B4%EA%B8%B0%0A-%20%EB%8C%80%EC%83%81%20%EC%9D%B4%EC%9A%A9%EC%B2%98%20%EC%95%88%EB%82%B4%0A-%20%EB%8C%80%EC%A4%91%EA%B5%90%ED%86%B5%C2%B7%ED%83%9D%EC%8B%9C%2010%25%20%EA%B2%B0%EC%A0%9C%EC%9D%BC%ED%95%A0%EC%9D%B8%0A-%20%ED%86%B5%EC%8B%A0%EC%9A%94%EA%B8%88%2010%25%20%EA%B2%B0%EC%A0%9C%EC%9D%BC%ED%95%A0%EC%9D%B8%0A-%20CGV%C2%B7%EB%A1%AF%EB%8D%B0%EC%8B%9C%EB%84%A4%EB%A7%88%205%2C000%EC%9B%90%20%EA%B2%B0%EC%A0%9C%EC%9D%BC%ED%95%A0%EC%9D%B8",
+        "moreInfo": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1483&BSCPN=BCTS&BSPRG=MGASA&BSCCN1=%EC%82%BC%EC%84%B1%EC%B9%B4%EB%93%9C_%EC%9B%8C%ED%81%AC%EC%9D%B8%ED%86%B5%ED%95%A9&alncmpC=QCKWMB41&affcode=QCKWMB41&utm_source=google&utm_medium=mo&utm_campaign=sa&utm_term&utm_content=undefined&webViewFirstPage=true"
+    },
+    {
+        "name": "SC%EC%A0%9C%EC%9D%BC%EC%9D%80%ED%96%89%20%EC%82%BC%EC%84%B1%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C%20CASHBACK",
+        "num": "3333-4444-****-****",
+        "type": 0,
+        "imgUrl": "b_ABP1459_01.png",
+        "descrip": "-%200.2%25~0.6%25%20%EC%BA%90%EC%8B%9C%EB%B0%B1%0A-%20CGV%203%2C000%EC%9B%90%20%ED%95%A0%EC%9D%B8%0A-%20CGV%20%EC%98%A8%EB%9D%BC%EC%9D%B8%EA%B0%80%EB%A7%B9%EC%A0%90%203%EC%B2%9C%EC%9B%90%20%ED%98%84%EC%9E%A5%ED%95%A0%EC%9D%B8%20%28%EC%B2%B4%ED%81%AC%EC%B9%B4%EB%93%9C%29%0A-%20%EB%86%80%EC%9D%B4%EA%B3%B5%EC%9B%90%20%ED%95%A0%EC%9D%B8%20%EC%84%9C%EB%B9%84%EC%8A%A4%0A-%20%ED%9B%84%EB%B6%88%20%EA%B5%90%ED%86%B5%EC%B9%B4%EB%93%9C%20%EA%B8%B0%EB%8A%A5",
+        "moreInfo": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=ABP1459"
+    },
+    {
+        "name": "K-%ED%8C%A8%EC%8A%A4%20%EC%82%BC%EC%84%B1%EC%B9%B4%EB%93%9C",
+        "num": "4444-5555-****-****",
+        "type": 1,
+        "imgUrl": "DN_AAP1830_2.gif",
+        "descrip": "-%20%EC%A0%95%EB%B6%80%EC%A7%80%EC%9B%90%0A-%20%EA%B5%AD%EA%B0%80%EB%B0%94%EC%9A%B0%EC%B2%98%20%EC%87%BC%ED%95%91%202%25%20%EC%BA%90%EC%8B%9C%EB%B0%B1%0A-%20%EC%9D%98%EB%A3%8C%C2%B7%EA%B5%90%EC%9C%A1%202%25%20%EC%BA%90%EC%8B%9C%EB%B0%B1%0A-%20%EC%8B%A0%EC%84%B8%EA%B3%84%EB%B0%B1%ED%99%94%EC%A0%90%20%EC%A0%9C%ED%9C%B4%20%EC%84%9C%EB%B9%84%EC%8A%A4",
+        "moreInfo": "https://www.samsungcard.com/home/card/cardinfo/PGHPPCCCardCardinfoDetails001?code=AAP1830"
+    },
+]

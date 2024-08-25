@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A609A8D62C7654F50015B472 /* NanumGothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF742C764C40008268E0 /* NanumGothic.ttf */; };
+		A609A8D82C7654F50015B472 /* NanumGothicBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF762C764C40008268E0 /* NanumGothicBold.ttf */; };
+		A609A8DA2C7654F50015B472 /* NanumGothicExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF782C764C40008268E0 /* NanumGothicExtraBold.ttf */; };
+		A609A8DC2C7654F50015B472 /* NanumGothicLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF7A2C764C40008268E0 /* NanumGothicLight.ttf */; };
+		A609A8DE2C7657D20015B472 /* CardVw.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609A8DD2C7657D20015B472 /* CardVw.swift */; };
+		A609A8E32C7659250015B472 /* CardInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A609A8E22C7659240015B472 /* CardInfo.swift */; };
+		A650AF302C7645D1008268E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650AF2F2C7645D1008268E0 /* AppDelegate.swift */; };
+		A650AF322C7645D1008268E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650AF312C7645D1008268E0 /* SceneDelegate.swift */; };
+		A650AF342C7645D1008268E0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650AF332C7645D1008268E0 /* MainVC.swift */; };
+		A650AF372C7645D1008268E0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A650AF362C7645D1008268E0 /* Base */; };
+		A650AF392C7645D2008268E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A650AF382C7645D2008268E0 /* Assets.xcassets */; };
+		A650AF3C2C7645D2008268E0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A650AF3B2C7645D2008268E0 /* Base */; };
+		A650AF472C7645D2008268E0 /* SamsungCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650AF462C7645D2008268E0 /* SamsungCardTests.swift */; };
+		A650AF512C7645D2008268E0 /* SamsungCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650AF502C7645D2008268E0 /* SamsungCardUITests.swift */; };
+		A650AF532C7645D2008268E0 /* SamsungCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650AF522C7645D2008268E0 /* SamsungCardUITestsLaunchTests.swift */; };
+		A650AF632C764769008268E0 /* PaginatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650AF622C764769008268E0 /* PaginatedView.swift */; };
+		A650AF672C7647CA008268E0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = A650AF662C7647CA008268E0 /* RxCocoa */; };
+		A650AF692C7647CA008268E0 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = A650AF682C7647CA008268E0 /* RxRelay */; };
+		A650AF6C2C764958008268E0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A650AF6B2C764958008268E0 /* SnapKit */; };
+		A650AF6F2C764A91008268E0 /* CardVw.xib in Resources */ = {isa = PBXBuildFile; fileRef = A650AF6E2C764A91008268E0 /* CardVw.xib */; };
+		A6E0E2842C76FF160001C5CD /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2832C76FF160001C5CD /* BaseVC.swift */; };
+		A6E0E2872C7700BE0001C5CD /* MainVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2862C7700BE0001C5CD /* MainVM.swift */; };
+		A6E0E28A2C77020F0001C5CD /* CardInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = A6E0E2892C77020F0001C5CD /* CardInfo.json */; };
+		A6E0E28E2C7709260001C5CD /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E28D2C7709260001C5CD /* Const.swift */; };
+		A6E0E2902C78C5390001C5CD /* CodableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E28F2C78C5390001C5CD /* CodableManager.swift */; };
+		A6E0E2922C78C7280001C5CD /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2912C78C7280001C5CD /* Utility.swift */; };
+		A6E0E2952C78C7650001C5CD /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2942C78C7650001C5CD /* Extension+Date.swift */; };
+		A6E0E2972C78D1840001C5CD /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2962C78D1840001C5CD /* Extension+String.swift */; };
+		A6E0E2992C78E54F0001C5CD /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2982C78E54F0001C5CD /* Extension+UIView.swift */; };
+		A6E0E29E2C7B51840001C5CD /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = A6E0E29D2C7B51840001C5CD /* FLAnimatedImage */; };
+		A6E0E2A12C7B54AA0001C5CD /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2A02C7B54AA0001C5CD /* WebVC.swift */; };
+		A6E0E2A22C7B587B0001C5CD /* NanumGothic.otf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF732C764C40008268E0 /* NanumGothic.otf */; };
+		A6E0E2A32C7B587B0001C5CD /* NanumGothicBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF752C764C40008268E0 /* NanumGothicBold.otf */; };
+		A6E0E2A42C7B587B0001C5CD /* NanumGothicExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF772C764C40008268E0 /* NanumGothicExtraBold.otf */; };
+		A6E0E2A52C7B587B0001C5CD /* NanumGothicLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = A650AF792C764C40008268E0 /* NanumGothicLight.otf */; };
+		A6E0E2A72C7B69380001C5CD /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E0E2A62C7B69380001C5CD /* Extension+UIApplication.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A650AF432C7645D2008268E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A650AF242C7645D1008268E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A650AF2B2C7645D1008268E0;
+			remoteInfo = SamsungCard;
+		};
+		A650AF4D2C7645D2008268E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A650AF242C7645D1008268E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A650AF2B2C7645D1008268E0;
+			remoteInfo = SamsungCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A609A8DD2C7657D20015B472 /* CardVw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardVw.swift; sourceTree = "<group>"; };
+		A609A8E22C7659240015B472 /* CardInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfo.swift; sourceTree = "<group>"; };
+		A650AF2C2C7645D1008268E0 /* SamsungCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamsungCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A650AF2F2C7645D1008268E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A650AF312C7645D1008268E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A650AF332C7645D1008268E0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		A650AF362C7645D1008268E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A650AF382C7645D2008268E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A650AF3B2C7645D2008268E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A650AF422C7645D2008268E0 /* SamsungCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamsungCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A650AF462C7645D2008268E0 /* SamsungCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsungCardTests.swift; sourceTree = "<group>"; };
+		A650AF4C2C7645D2008268E0 /* SamsungCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamsungCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A650AF502C7645D2008268E0 /* SamsungCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsungCardUITests.swift; sourceTree = "<group>"; };
+		A650AF522C7645D2008268E0 /* SamsungCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamsungCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A650AF622C764769008268E0 /* PaginatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginatedView.swift; sourceTree = "<group>"; };
+		A650AF6E2C764A91008268E0 /* CardVw.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardVw.xib; sourceTree = "<group>"; };
+		A650AF732C764C40008268E0 /* NanumGothic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.otf; sourceTree = "<group>"; };
+		A650AF742C764C40008268E0 /* NanumGothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothic.ttf; sourceTree = "<group>"; };
+		A650AF752C764C40008268E0 /* NanumGothicBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.otf; sourceTree = "<group>"; };
+		A650AF762C764C40008268E0 /* NanumGothicBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicBold.ttf; sourceTree = "<group>"; };
+		A650AF772C764C40008268E0 /* NanumGothicExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.otf; sourceTree = "<group>"; };
+		A650AF782C764C40008268E0 /* NanumGothicExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicExtraBold.ttf; sourceTree = "<group>"; };
+		A650AF792C764C40008268E0 /* NanumGothicLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicLight.otf; sourceTree = "<group>"; };
+		A650AF7A2C764C40008268E0 /* NanumGothicLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumGothicLight.ttf; sourceTree = "<group>"; };
+		A6E0E27F2C76FB6A0001C5CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E0E2832C76FF160001C5CD /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		A6E0E2862C7700BE0001C5CD /* MainVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVM.swift; sourceTree = "<group>"; };
+		A6E0E2892C77020F0001C5CD /* CardInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CardInfo.json; sourceTree = "<group>"; };
+		A6E0E28D2C7709260001C5CD /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		A6E0E28F2C78C5390001C5CD /* CodableManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableManager.swift; sourceTree = "<group>"; };
+		A6E0E2912C78C7280001C5CD /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A6E0E2942C78C7650001C5CD /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		A6E0E2962C78D1840001C5CD /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		A6E0E2982C78E54F0001C5CD /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		A6E0E2A02C7B54AA0001C5CD /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		A6E0E2A62C7B69380001C5CD /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A650AF292C7645D1008268E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A650AF6C2C764958008268E0 /* SnapKit in Frameworks */,
+				A650AF692C7647CA008268E0 /* RxRelay in Frameworks */,
+				A650AF672C7647CA008268E0 /* RxCocoa in Frameworks */,
+				A6E0E29E2C7B51840001C5CD /* FLAnimatedImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A650AF3F2C7645D2008268E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A650AF492C7645D2008268E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A609A8E12C7659160015B472 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A609A8E22C7659240015B472 /* CardInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A612FC532C76F468004747BD /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF352C7645D1008268E0 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		A650AF232C7645D1008268E0 = {
+			isa = PBXGroup;
+			children = (
+				A650AF2E2C7645D1008268E0 /* SamsungCard */,
+				A650AF452C7645D2008268E0 /* SamsungCardTests */,
+				A650AF4F2C7645D2008268E0 /* SamsungCardUITests */,
+				A650AF2D2C7645D1008268E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A650AF2D2C7645D1008268E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF2C2C7645D1008268E0 /* SamsungCard.app */,
+				A650AF422C7645D2008268E0 /* SamsungCardTests.xctest */,
+				A650AF4C2C7645D2008268E0 /* SamsungCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A650AF2E2C7645D1008268E0 /* SamsungCard */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E2932C78C74E0001C5CD /* Extension */,
+				A6E0E28C2C7709100001C5CD /* Share */,
+				A6E0E28B2C7708DE0001C5CD /* Manager */,
+				A609A8E12C7659160015B472 /* Models */,
+				A650AF602C7646E5008268E0 /* UI Files */,
+				A650AF382C7645D2008268E0 /* Assets.xcassets */,
+				A650AF3A2C7645D2008268E0 /* LaunchScreen.storyboard */,
+				A650AF712C764B41008268E0 /* Resource */,
+				A650AF5F2C764669008268E0 /* Supporting Files */,
+			);
+			path = SamsungCard;
+			sourceTree = "<group>";
+		};
+		A650AF452C7645D2008268E0 /* SamsungCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF462C7645D2008268E0 /* SamsungCardTests.swift */,
+			);
+			path = SamsungCardTests;
+			sourceTree = "<group>";
+		};
+		A650AF4F2C7645D2008268E0 /* SamsungCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF502C7645D2008268E0 /* SamsungCardUITests.swift */,
+				A650AF522C7645D2008268E0 /* SamsungCardUITestsLaunchTests.swift */,
+			);
+			path = SamsungCardUITests;
+			sourceTree = "<group>";
+		};
+		A650AF5F2C764669008268E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF2F2C7645D1008268E0 /* AppDelegate.swift */,
+				A650AF312C7645D1008268E0 /* SceneDelegate.swift */,
+				A6E0E27F2C76FB6A0001C5CD /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A650AF602C7646E5008268E0 /* UI Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E2822C76FE470001C5CD /* ViewController */,
+				A612FC532C76F468004747BD /* StoryBoard */,
+				A650AF612C7646FE008268E0 /* CustomUI */,
+			);
+			path = "UI Files";
+			sourceTree = "<group>";
+		};
+		A650AF612C7646FE008268E0 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF6D2C764A7D008268E0 /* CardVw */,
+				A650AF622C764769008268E0 /* PaginatedView.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		A650AF6D2C764A7D008268E0 /* CardVw */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF6E2C764A91008268E0 /* CardVw.xib */,
+				A609A8DD2C7657D20015B472 /* CardVw.swift */,
+			);
+			path = CardVw;
+			sourceTree = "<group>";
+		};
+		A650AF712C764B41008268E0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E2882C7701F50001C5CD /* JSON */,
+				A650AF722C764B4D008268E0 /* Font */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A650AF722C764B4D008268E0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF7B2C764C40008268E0 /* nanum-gothic */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		A650AF7B2C764C40008268E0 /* nanum-gothic */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF732C764C40008268E0 /* NanumGothic.otf */,
+				A650AF742C764C40008268E0 /* NanumGothic.ttf */,
+				A650AF752C764C40008268E0 /* NanumGothicBold.otf */,
+				A650AF762C764C40008268E0 /* NanumGothicBold.ttf */,
+				A650AF772C764C40008268E0 /* NanumGothicExtraBold.otf */,
+				A650AF782C764C40008268E0 /* NanumGothicExtraBold.ttf */,
+				A650AF792C764C40008268E0 /* NanumGothicLight.otf */,
+				A650AF7A2C764C40008268E0 /* NanumGothicLight.ttf */,
+			);
+			path = "nanum-gothic";
+			sourceTree = "<group>";
+		};
+		A6E0E2822C76FE470001C5CD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E29F2C7B548A0001C5CD /* Web */,
+				A6E0E2852C77005F0001C5CD /* Main */,
+				A6E0E2832C76FF160001C5CD /* BaseVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A6E0E2852C77005F0001C5CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A650AF332C7645D1008268E0 /* MainVC.swift */,
+				A6E0E2862C7700BE0001C5CD /* MainVM.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A6E0E2882C7701F50001C5CD /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E2892C77020F0001C5CD /* CardInfo.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A6E0E28B2C7708DE0001C5CD /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E28F2C78C5390001C5CD /* CodableManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A6E0E28C2C7709100001C5CD /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E28D2C7709260001C5CD /* Const.swift */,
+				A6E0E2912C78C7280001C5CD /* Utility.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		A6E0E2932C78C74E0001C5CD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E2942C78C7650001C5CD /* Extension+Date.swift */,
+				A6E0E2962C78D1840001C5CD /* Extension+String.swift */,
+				A6E0E2982C78E54F0001C5CD /* Extension+UIView.swift */,
+				A6E0E2A62C7B69380001C5CD /* Extension+UIApplication.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A6E0E29F2C7B548A0001C5CD /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0E2A02C7B54AA0001C5CD /* WebVC.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A650AF2B2C7645D1008268E0 /* SamsungCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A650AF562C7645D2008268E0 /* Build configuration list for PBXNativeTarget "SamsungCard" */;
+			buildPhases = (
+				A650AF282C7645D1008268E0 /* Sources */,
+				A650AF292C7645D1008268E0 /* Frameworks */,
+				A650AF2A2C7645D1008268E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamsungCard;
+			packageProductDependencies = (
+				A650AF662C7647CA008268E0 /* RxCocoa */,
+				A650AF682C7647CA008268E0 /* RxRelay */,
+				A650AF6B2C764958008268E0 /* SnapKit */,
+				A6E0E29D2C7B51840001C5CD /* FLAnimatedImage */,
+			);
+			productName = SamsungCard;
+			productReference = A650AF2C2C7645D1008268E0 /* SamsungCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A650AF412C7645D2008268E0 /* SamsungCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A650AF592C7645D2008268E0 /* Build configuration list for PBXNativeTarget "SamsungCardTests" */;
+			buildPhases = (
+				A650AF3E2C7645D2008268E0 /* Sources */,
+				A650AF3F2C7645D2008268E0 /* Frameworks */,
+				A650AF402C7645D2008268E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A650AF442C7645D2008268E0 /* PBXTargetDependency */,
+			);
+			name = SamsungCardTests;
+			productName = SamsungCardTests;
+			productReference = A650AF422C7645D2008268E0 /* SamsungCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A650AF4B2C7645D2008268E0 /* SamsungCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A650AF5C2C7645D2008268E0 /* Build configuration list for PBXNativeTarget "SamsungCardUITests" */;
+			buildPhases = (
+				A650AF482C7645D2008268E0 /* Sources */,
+				A650AF492C7645D2008268E0 /* Frameworks */,
+				A650AF4A2C7645D2008268E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A650AF4E2C7645D2008268E0 /* PBXTargetDependency */,
+			);
+			name = SamsungCardUITests;
+			productName = SamsungCardUITests;
+			productReference = A650AF4C2C7645D2008268E0 /* SamsungCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A650AF242C7645D1008268E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A650AF2B2C7645D1008268E0 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A650AF412C7645D2008268E0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A650AF2B2C7645D1008268E0;
+					};
+					A650AF4B2C7645D2008268E0 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A650AF2B2C7645D1008268E0;
+					};
+				};
+			};
+			buildConfigurationList = A650AF272C7645D1008268E0 /* Build configuration list for PBXProject "SamsungCard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A650AF232C7645D1008268E0;
+			packageReferences = (
+				A650AF652C7647CA008268E0 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				A650AF6A2C764958008268E0 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A6E0E29C2C7B51830001C5CD /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
+			);
+			productRefGroup = A650AF2D2C7645D1008268E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A650AF2B2C7645D1008268E0 /* SamsungCard */,
+				A650AF412C7645D2008268E0 /* SamsungCardTests */,
+				A650AF4B2C7645D2008268E0 /* SamsungCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A650AF2A2C7645D1008268E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E0E2A22C7B587B0001C5CD /* NanumGothic.otf in Resources */,
+				A6E0E2A32C7B587B0001C5CD /* NanumGothicBold.otf in Resources */,
+				A6E0E2A42C7B587B0001C5CD /* NanumGothicExtraBold.otf in Resources */,
+				A6E0E2A52C7B587B0001C5CD /* NanumGothicLight.otf in Resources */,
+				A609A8D62C7654F50015B472 /* NanumGothic.ttf in Resources */,
+				A609A8D82C7654F50015B472 /* NanumGothicBold.ttf in Resources */,
+				A609A8DA2C7654F50015B472 /* NanumGothicExtraBold.ttf in Resources */,
+				A609A8DC2C7654F50015B472 /* NanumGothicLight.ttf in Resources */,
+				A650AF392C7645D2008268E0 /* Assets.xcassets in Resources */,
+				A650AF3C2C7645D2008268E0 /* Base in Resources */,
+				A6E0E28A2C77020F0001C5CD /* CardInfo.json in Resources */,
+				A650AF6F2C764A91008268E0 /* CardVw.xib in Resources */,
+				A650AF372C7645D1008268E0 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A650AF402C7645D2008268E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A650AF4A2C7645D2008268E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A650AF282C7645D1008268E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6E0E2A72C7B69380001C5CD /* Extension+UIApplication.swift in Sources */,
+				A6E0E2992C78E54F0001C5CD /* Extension+UIView.swift in Sources */,
+				A6E0E2972C78D1840001C5CD /* Extension+String.swift in Sources */,
+				A650AF342C7645D1008268E0 /* MainVC.swift in Sources */,
+				A609A8E32C7659250015B472 /* CardInfo.swift in Sources */,
+				A650AF302C7645D1008268E0 /* AppDelegate.swift in Sources */,
+				A6E0E2922C78C7280001C5CD /* Utility.swift in Sources */,
+				A650AF632C764769008268E0 /* PaginatedView.swift in Sources */,
+				A6E0E2A12C7B54AA0001C5CD /* WebVC.swift in Sources */,
+				A6E0E2902C78C5390001C5CD /* CodableManager.swift in Sources */,
+				A650AF322C7645D1008268E0 /* SceneDelegate.swift in Sources */,
+				A6E0E2842C76FF160001C5CD /* BaseVC.swift in Sources */,
+				A6E0E2952C78C7650001C5CD /* Extension+Date.swift in Sources */,
+				A609A8DE2C7657D20015B472 /* CardVw.swift in Sources */,
+				A6E0E2872C7700BE0001C5CD /* MainVM.swift in Sources */,
+				A6E0E28E2C7709260001C5CD /* Const.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A650AF3E2C7645D2008268E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A650AF472C7645D2008268E0 /* SamsungCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A650AF482C7645D2008268E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A650AF512C7645D2008268E0 /* SamsungCardUITests.swift in Sources */,
+				A650AF532C7645D2008268E0 /* SamsungCardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A650AF442C7645D2008268E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A650AF2B2C7645D1008268E0 /* SamsungCard */;
+			targetProxy = A650AF432C7645D2008268E0 /* PBXContainerItemProxy */;
+		};
+		A650AF4E2C7645D2008268E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A650AF2B2C7645D1008268E0 /* SamsungCard */;
+			targetProxy = A650AF4D2C7645D2008268E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A650AF352C7645D1008268E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A650AF362C7645D1008268E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A650AF3A2C7645D2008268E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A650AF3B2C7645D2008268E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A650AF542C7645D2008268E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A650AF552C7645D2008268E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A650AF572C7645D2008268E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF63XN3KJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SamsungCard/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "한세미_데모앱";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = semi.han.SamsungCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A650AF582C7645D2008268E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF63XN3KJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SamsungCard/Supporting Files/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "한세미_데모앱";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = semi.han.SamsungCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A650AF5A2C7645D2008268E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF63XN3KJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = semi.han.SamsungCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamsungCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SamsungCard";
+			};
+			name = Debug;
+		};
+		A650AF5B2C7645D2008268E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF63XN3KJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = semi.han.SamsungCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamsungCard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SamsungCard";
+			};
+			name = Release;
+		};
+		A650AF5D2C7645D2008268E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF63XN3KJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = semi.han.SamsungCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SamsungCard;
+			};
+			name = Debug;
+		};
+		A650AF5E2C7645D2008268E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF63XN3KJL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = semi.han.SamsungCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = SamsungCard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A650AF272C7645D1008268E0 /* Build configuration list for PBXProject "SamsungCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A650AF542C7645D2008268E0 /* Debug */,
+				A650AF552C7645D2008268E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A650AF562C7645D2008268E0 /* Build configuration list for PBXNativeTarget "SamsungCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A650AF572C7645D2008268E0 /* Debug */,
+				A650AF582C7645D2008268E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A650AF592C7645D2008268E0 /* Build configuration list for PBXNativeTarget "SamsungCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A650AF5A2C7645D2008268E0 /* Debug */,
+				A650AF5B2C7645D2008268E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A650AF5C2C7645D2008268E0 /* Build configuration list for PBXNativeTarget "SamsungCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A650AF5D2C7645D2008268E0 /* Debug */,
+				A650AF5E2C7645D2008268E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A650AF652C7647CA008268E0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		A650AF6A2C764958008268E0 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		A6E0E29C2C7B51830001C5CD /* XCRemoteSwiftPackageReference "FLAnimatedImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flipboard/FLAnimatedImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A650AF662C7647CA008268E0 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A650AF652C7647CA008268E0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		A650AF682C7647CA008268E0 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A650AF652C7647CA008268E0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		A650AF6B2C764958008268E0 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A650AF6A2C764958008268E0 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A6E0E29D2C7B51840001C5CD /* FLAnimatedImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6E0E29C2C7B51830001C5CD /* XCRemoteSwiftPackageReference "FLAnimatedImage" */;
+			productName = FLAnimatedImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A650AF242C7645D1008268E0 /* Project object */;
+}
